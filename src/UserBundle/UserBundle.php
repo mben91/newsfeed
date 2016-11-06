@@ -11,6 +11,4 @@ class UserBundle extends Bundle
        return 'FOSUserBundle';
     }
 
-    
-
 }
