@@ -75,25 +75,4 @@ fos_user:
 
     service:
         mailer: fos_user.mailer.twig_swift
-
-    resetting:
-        token_ttl: 86400
-        email:
-            from_email:
-                address:        resetting@example.com
-                sender_name:    Demo Resetting
-            template:   FOSUserBundle:Resetting:email.txt.twig
-        form:
-            type:               FOS\UserBundle\Form\Type\ResettingFormType # or 'fos_user_resetting' on Symfony < 2.8
-            name:               fos_user_resetting_form
-            validation_groups:  [ResetPassword, Default]
-    registration:
-        form:
-            type: UserBundle\Form\RegistrationType
-
-        confirmation:
-            # template:   FOSUserBundle:Registration:email.txt.twig
-            enabled: false
-            #from_email:
-            #    address:        registration@example.com
-            #    sender_name:    Demo Registration
+        
