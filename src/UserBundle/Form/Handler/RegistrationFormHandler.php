@@ -9,6 +9,7 @@ class RegistrationFormHandler extends BaseHandler
 {
     protected function onSuccess(UserInterface $user, $confirmation)
     {
+      die("9999");
         // Note: if you plan on modifying the user then do it before calling the
         // parent method as the parent method will flush the changes
 
@@ -19,6 +20,7 @@ class RegistrationFormHandler extends BaseHandler
 
     public function process($confirmation = false)
     {
+      die("---");
         $user = $this->userManager->createUser();
         $this->form->setData($user);
 
