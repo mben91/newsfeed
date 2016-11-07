@@ -1,0 +1,7 @@
+Registration
+{% if error is defined %}
+  <div class="error">
+    {{error}}
+  </div>
+{% endif %}
+{{ form(form, {'attr': {'novalidate': 'novalidate'}}) }}
